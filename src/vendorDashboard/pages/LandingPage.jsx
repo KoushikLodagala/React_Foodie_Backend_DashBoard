@@ -47,8 +47,6 @@ const LandingPage = () => {
       setShowProduct(false)
       setShowWelcome(false)
       setShowAllProducts(false)
-
-
     }
 
     const showRegisterHandler = () => {
