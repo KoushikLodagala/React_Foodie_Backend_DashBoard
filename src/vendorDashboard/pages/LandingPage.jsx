@@ -47,7 +47,9 @@ const LandingPage = () => {
       setShowProduct(false)
       setShowWelcome(false)
       setShowAllProducts(false)
+      
     }
+    
 
     const showRegisterHandler = () => {
       setShowRegister(true)
@@ -61,18 +63,19 @@ const LandingPage = () => {
     }
 
     const showFirmHandler = () => {
-      if(showLogOut){
+      // if(showLogOut){
       setShowRegister(false)
       setShowLogin(false)
       setShowFirm(true)
       setShowProduct(false)
       setShowWelcome(false)
       setShowAllProducts(false)
+      setShowLogOut(true)
       
-      }else{
-        alert(" Please login ")
-        setShowLogin(true)
-      }
+      // }else{
+      //   alert(" Please login ")
+        // setShowLogin(true)
+      // }
     }
 
     const showProductHandler = ()=>{

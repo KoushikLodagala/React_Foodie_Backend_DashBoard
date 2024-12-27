@@ -77,6 +77,8 @@ const handleFirmSubmit = async (e)=>{
       setOffer("")
       setFile(null)
       alert("Firm added Successfully")
+     
+      
     }else if (data.message === "Vendor can have only one firm"){
       alert("Firm Exists 🥗 . Only one firm can be added by a vendor")
     }else{
@@ -87,6 +89,7 @@ const handleFirmSubmit = async (e)=>{
      const firmId = data.firmId;
 
      localStorage.setItem('firmId',firmId)
+     
 
   } catch (error) {
     console.error( error,"failed to add firm")
